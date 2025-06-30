@@ -90,13 +90,12 @@
 };
 
 // right hand trackball configuration
-// &trackball_peripheral_listener {
-//    input-processors =
-//     activate layer 3 within 500ms of the trackball moving
-//     <&zip_temp_layer 3 500>;
-// };
-//left hand trackball configuration
+&trackball_peripheral_listener {
+    input-processors =
+        <&zip_temp_layer 1 300>;
+};
 
+//left hand trackball configuration
 &trackball_central_listener {
     input-processors =
         // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,
