@@ -10,7 +10,7 @@
 
 	default_transform: keymap_transform_0 {
 	compatible = "zmk,matrix-transform";
-		columns = <8>;
+		columns = <6>;
 		rows = <14>;
 		map = <
 					  RC(4,5) RC(4,4) RC(4,3) RC(4,2) RC(4,1) RC(4,0)                           RC(11,0) RC(11,1) RC(11,2) RC(11,3) RC(11,4) RC(11,5)
@@ -30,9 +30,7 @@
 
 		diode-direction = "row2col";
 		col-gpios
-		= <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col0 from schematic
-		, <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col1 from schematic
-		, <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col2 from schematic
+		= <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col2 from schematic
 		, <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col3 from schematic
 		, <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col4 from schematic
 		, <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col5 from schematic
