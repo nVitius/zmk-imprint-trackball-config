@@ -1,3 +1,4 @@
+name: nv-imprint
 build:
   settings:
     board_root: .
