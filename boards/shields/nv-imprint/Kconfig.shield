@@ -1,5 +1,0 @@
-config SHIELD_NV_IMPRINT_LEFT
-    def_bool $(shields_list_contains,nv-imprint_left)
-
-config SHIELD_NV_IMPRINT_RIGHT
-    def_bool $(shields_list_contains,nv-imprint_right)
